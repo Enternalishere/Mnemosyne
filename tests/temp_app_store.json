@@ -1,0 +1,32 @@
+[
+  {
+    "memory_id": "fdb99962-6936-4a5d-a90f-eecc11820456",
+    "content": "I believe RAG is the future of personal AI.",
+    "created_at": "2026-01-14T23:56:50.557466",
+    "memory_type": "belief",
+    "confidence": 0.9,
+    "source": "note",
+    "topic": [
+      "believe",
+      "rag",
+      "future",
+      "personal"
+    ],
+    "revision_of": null
+  },
+  {
+    "memory_id": "1396999a-03e9-4ebf-aec0-1d774d19eeda",
+    "content": "I believe RAG is the future of personal AI.",
+    "created_at": "2026-01-15T21:11:27.569584",
+    "memory_type": "belief",
+    "confidence": 0.9,
+    "source": "note",
+    "topic": [
+      "believe",
+      "rag",
+      "future",
+      "personal"
+    ],
+    "revision_of": null
+  }
+]

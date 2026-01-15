@@ -1,0 +1,26 @@
+[
+  {
+    "memory_id": "m1",
+    "content": "Belief about storage.",
+    "created_at": "2026-01-15T21:11:27.548281",
+    "memory_type": "belief",
+    "confidence": 0.8,
+    "source": "note",
+    "topic": [
+      "storage"
+    ],
+    "revision_of": null
+  },
+  {
+    "memory_id": "m2",
+    "content": "Another belief.",
+    "created_at": "2026-01-15T21:11:27.548281",
+    "memory_type": "belief",
+    "confidence": 0.8,
+    "source": "note",
+    "topic": [
+      "other"
+    ],
+    "revision_of": null
+  }
+]

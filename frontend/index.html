@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mnemosyne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+<header class="header">
+<h1>Mnemosyne</h1>
+<div class="api-config">
+<label>API base URL</label>
+<input id="api-base-input" type="text" placeholder="http://localhost:8000">
+<button id="api-base-save">Save</button>
+</div>
+</header>
+<main class="grid">
+<section class="card">
+<h2>Ingest Memory</h2>
+<label>Text</label>
+<textarea id="ingest-text" rows="4"></textarea>
+<label>Source</label>
+<select id="ingest-source">
+<option value="note">note</option>
+<option value="pdf">pdf</option>
+<option value="tweet">tweet</option>
+<option value="chat">chat</option>
+<option value="voice">voice</option>
+</select>
+<label>Profile</label>
+<select id="ingest-profile">
+<option value="default">default</option>
+<option value="journal">journal</option>
+<option value="research">research</option>
+</select>
+<label>Timestamp (optional)</label>
+<input id="ingest-timestamp" type="text" placeholder="2026-01-14T10:30:00">
+<label>Store path</label>
+<input id="ingest-store" type="text" value="data/memories.json">
+<button id="ingest-submit">Ingest</button>
+<pre id="ingest-output" class="output"></pre>
+</section>
+<section class="card">
+<h2>Ask Mnemosyne</h2>
+<label>Question</label>
+<textarea id="question-text" rows="4"></textarea>
+<label>Store path</label>
+<input id="question-store" type="text" value="data/memories.json">
+<button id="question-submit">Ask</button>
+<pre id="question-output" class="output"></pre>
+</section>
+<section class="card">
+<h2>Thinking Session</h2>
+<label>Topic</label>
+<input id="session-topic" type="text" placeholder="rag">
+<label>Store path</label>
+<input id="session-store" type="text" value="data/memories.json">
+<label>Start (optional)</label>
+<input id="session-start" type="text" placeholder="2026-01-01T00:00:00">
+<label>End (optional)</label>
+<input id="session-end" type="text" placeholder="2026-02-01T00:00:00">
+<button id="session-submit">Run Session</button>
+<pre id="session-output" class="output"></pre>
+</section>
+<section class="card">
+<h2>Graph and Timeline</h2>
+<label>Store path</label>
+<input id="graph-store" type="text" value="data/memories.json">
+<label>Topic for timeline (optional)</label>
+<input id="timeline-topic" type="text" placeholder="rag">
+<div class="button-row">
+<button id="graph-submit">Load Graph</button>
+<button id="timeline-submit">Load Timeline</button>
+</div>
+<div class="split-output">
+<div>
+<h3>Graph</h3>
+<pre id="graph-output" class="output small"></pre>
+</div>
+<div>
+<h3>Timeline</h3>
+<pre id="timeline-output" class="output small"></pre>
+</div>
+</div>
+</section>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+
